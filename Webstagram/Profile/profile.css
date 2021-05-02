@@ -1,0 +1,136 @@
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #262626;
+  padding-bottom: 3rem;
+  margin-top: 50px;
+}
+
+/* Profile */
+
+.profileBtn {
+  border: 0;
+  outline: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.ProfileImg {
+  float: left;
+  width: calc(33.333% - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+.ProfileImg img {
+  border-radius: 50%;
+}
+
+.userName {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.profileEditBtn {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  border: 0.1rem solid #dbdbdb;
+  border-radius: 0.3rem;
+  padding: 0 2.4rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.ProfileInfo ul {
+  list-style: none;
+  padding-right: 30px;
+  margin: 20px 0;
+  display: flex;
+}
+
+.ProfileInfo li {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+.ProfileLetter {
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+}
+
+.profileEditBtn,
+.Profile,
+.ProfileLetter {
+  font-weight: 600;
+}
+
+/* Post */
+
+main {
+  margin-left: 20rem;
+}
+.InstaPost {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+}
+
+.InstaPost:hover .PostInfo,
+.InstaPost:focus .PostInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  filter: opacity(0.8) drop-shadow(0 0 0 black);
+}
+
+.PostInfo {
+  display: none;
+}
+
+.PostInfo li {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: 2rem;
+  color: white;
+}
+
+.postImg {
+  justify-content: center;
+  align-items: center;
+}
+
+.postImg img {
+  position: relative;
+  flex: 1 0 27rem;
+  margin: 1rem;
+  color: #fff;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
