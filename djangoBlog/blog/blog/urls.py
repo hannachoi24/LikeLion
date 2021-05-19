@@ -20,7 +20,7 @@ from blogapp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
-    path('<str:id>', detail, name="detail"),
+    path('<int:id>', detail, name="detail"),
 ]
 
 """ <str:id>: <자료형:(views.py)에 정의한 매개변수이름> 데이터 베이스의 데이터(id)에 따라 페이지가 다르게 보이기도하고 views.py의 매개변수로 들어가기도함 """
