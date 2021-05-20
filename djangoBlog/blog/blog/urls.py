@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from djangoBlog.blog.blogapp.views import create
 from django.contrib import admin
 from django.urls import path
 from blogapp.views import *
@@ -21,6 +22,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name="home"),
     path('<int:id>', detail, name="detail"),
+    path('new/', new, name="new"),
+    path('create/', create, name="create"),
+    path('edit/<str:id>', edit, name="edit"),
+    path('update/<str:id>', update, name="update"),
+    path('delete/<str:id>', delete, name="delete"),
+
+
+
 ]
 
 """ <str:id>: <자료형:(views.py)에 정의한 매개변수이름> 데이터 베이스의 데이터(id)에 따라 페이지가 다르게 보이기도하고 views.py의 매개변수로 들어가기도함 """
