@@ -2,7 +2,7 @@
 
 |   Week   | Date  |                                   Content                                    |                                    Assignment                                    |                                         README                                          |
 | :------: | :---: | :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
-| `1주차`  | 03/31 |                                      OT                                      |
+| `1주차`   | 03/31 |                                      OT                                      |
 | `2주차`  | 04/07 |                       WebStargram 프로필 만들기\_html                        | [Webstagram](https://github.com/hannachoi24/LikeLion.git/tree/master/Webstagram) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_Webstagram.md) |
 | `3주차`  | 04/14 |                        WebStargram 프로필 만들기\_css                        | [Webstagram](https://github.com/hannachoi24/LikeLion.git/tree/master/Webstagram) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_Webstagram.md) |
 | `4주차`  | 05/05 |                                    Python                                    |
