@@ -8,7 +8,7 @@
 | `4주차`  | 05/05 |                                    Python                                    |
 | `5주차`  | 05/12 |                               djangoBlog_CRUD                                | [djangoBlog](https://github.com/hannachoi24/LikeLion.git/tree/master/djangoBlog) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_djangoBlog.md) |
 | `6주차`  | 05/19 |            djangoBlog\_템플릿 상속, Static&Media, Form, User 관리            | [djangoBlog](https://github.com/hannachoi24/LikeLion.git/tree/master/djangoBlog) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_djangoBlog.md) |
-| `7주차`  | 05/26 | django_URL분리하기, App재사용하기, 관계형 모델필드, API사용하기, AWS배포하기 |                                   [djangoPart3](https://github.com/hannachoi24/LikeLion.git/tree/master/djangoPart3) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_djangoPart3.md) |                                   |                                                                                     |
+| `7주차`  | 05/26 | django_URL분리하기, App재사용하기, 관계형 모델필드, API사용하기, AWS배포하기 | [djangoPart3](https://github.com/hannachoi24/LikeLion.git/tree/master/djangoPart3) | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_djangoPart3.md) |                                   |                                                                                     |
 | `9주차`  | 06/09 |
 | `10주차` | 06/16 |
 | `11주차` | 07/07 |
