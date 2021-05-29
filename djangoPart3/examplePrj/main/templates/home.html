@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> example </title>
+        <style>
+            body{text-align: center};
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <button class="writeNew" type="button"> 
+                <a href="{%url 'new'%}">글작성</a>
+            </button>
+            <!--account앱 관련 버튼이 붙여넣을 곳-->
+        </div>
+        <div class="container">
+            {%for blog in blogs %}
+                <div>
+                <h3>{{blog.id}} {{blog.title}}</h3>
+                작성자:{{blog.author}} 
+                <br>
+                {{blog.summary}}<a href="{%url 'detail' blog.id %}">...more</a>
+                <br>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
