@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+<head>
+{% load static %}
+{% block extrahead %}
+<link href="{% static 'css/profile.css' %}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+</head>
+{% block content %}
+    <header>
+        <div class="ProfileImg">
+            <button class="profileBtn">
+                <img src="{% static 'img/ssu_likelion_logo_150x150.png' %}" alt ="프로필 이미지"/>
+            </button>
+        </div>
+        <div class="Profile">
+            <h1 class="userName">{{writer.username}}</h1>
+            <button class="profileEditBtn">프로필 편집</button>
+        </div>
+        <div class="ProfileInfo">
+            <ul>
+                <li>000 게시물</li>
+                <li>000 팔로워</li>
+                <li>000 팔로잉</li>
+            </ul>
+        </div>
+        <div class = "ProfileLetter">
+            <p>hello world &#128587;</p>
+        </div>
+    </header>
+    <main>
+        <div class="InstaPost">
+            <div class="postImg">
+                <img src="{% static 'img/lionface.png' %}" alt="사자 그림">
+            </div>
+            <ul class="PostInfo">
+                <li>Likes: 0</li>
+                <li>Comments: 0</li>
+            </ul>
+        </div>
+        <div class="InstaPost">
+            <div class="postImg">
+                <img src="{% static 'img/lionface.png' %}" alt="사자 그림">
+            </div>
+            <ul class="PostInfo">
+                <li>Likes: 0</li>
+                <li>Comments: 0</li>
+            </ul>
+        </div>
+        <div class="InstaPost">
+            <div class="postImg">
+                <img src="{% static 'img/lionface.png' %}" alt="사자 그림">
+            </div>
+            <ul class="PostInfo">
+                <li>Likes: 0</li>
+                <li>Comments: 0</li>
+            </ul>
+        </div>
+    </main>    
+</body>
+</html>
