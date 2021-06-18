@@ -2,7 +2,7 @@
 <head>
 {% load static %}
 {% block extrahead %}
-<link href="{% static 'css/login.css %}" rel="stylesheet" type="text/css" />
+<link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" />
 {% endblock %}
 </head>
 {% block content %}
@@ -12,9 +12,9 @@
         <form action="{%url 'login'%}" method="POST">
           {%csrf_token%}
           <img class="InstagramText" src="{% static 'img/logo_text.png' %}" alt="instagramText">
-          <input type="text" class="userLogin" placeholder="전화번호, 사용자 이름 또는 이메일">
-          <input type="password" class="userLogin" placeholder="비밀번호">
-          <button id="loginButton" disabled>로그인</button>
+          <input type="text" class="userLogin" name="username" placeholder="전화번호, 사용자 이름 또는 이메일">
+          <input type="password" class="userLogin" name="password" placeholder="비밀번호">
+          <button id="loginButton" type="submit">로그인</button>
         </form>
     </div>
     <div>

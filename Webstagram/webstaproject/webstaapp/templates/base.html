@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Instagram</title>
-    <link href="base.css" rel="stylesheet" type="text/css"/>
-    <link rel="icon" href="../img/icon.png">
+{% load static %}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram</title>
+<link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="{% static 'img/icon.png'%}">
+{% block extrahead %}
+{% endblock %}
 </head>
 <body>
-    <header>
+    {% load static %}
+    <header class="base_header">
         <div class="left_box">
             <div class="favicon_frame">
-                <img class="faviconFrame" src="../img/line_favicon.png" alt="인스타 로고" />
+                
+                    <img class="faviconFrame" src="{% static 'img/line_favicon.png' %}" alt="인스타 로고"/>
+                
             </div>
-            <div class="line">
-                <img class="logo" src="../img/logo_text.png" alt="인스타 글씨" />
-            </div>    
+            <div class="logo_box">
+                <a href="{%url 'feed'%}">
+                <img class="navlogo" src="{% static 'img/logo_text.png' %}" alt="인스타 글씨"/>
+                </a>
+            </div>
         </div>
         <div class="right_box">
-            <div class="hear_box">
-                <img class="heart" src="../img/new.png" alt="글 작성" />
+            <div class="heart_box">
+                <img class="heart" src="{% static 'img/liked.png' %}" alt="글 작성"/>
             </div>
             <div class="myInfo_box">
-                <img class="myInfo" src="../img/myinfo.png" alt="내 프로필" />
-            </div>    
+                <img class="myInfo" src="{% static 'img/myinfo.png' %}" alt="내 프로필"/>
+            </div>
+            {% if user.is_authenticated %}
+            <li class="navbar_item"><a href="{% url 'logout' %}">로그아웃</a></li>
+            {% endif %}
+            {% if not user.is_authenticated %}
+            <li class="navbar_item"><a href="{% url 'login' %}">로그인</a></li>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <div class="showID">{{user.username}}</div>
+            {% endif%}
         </div>
     </header>
-</body>  
+    <hr class="navline" color="#E2E2E2" size="1px">
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
 </html>

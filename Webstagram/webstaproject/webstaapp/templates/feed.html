@@ -5,9 +5,10 @@
 <link href="{% static 'css/feed.css' %}" rel="stylesheet" type="text/css"/>
 {% endblock %}
 </head>
-{% block content %}>
+{% block content %}
     <div class="main">
         <section class="cardViewSection"> <!--논리적으로 관계가 있는 문서를 분리--> 
+            {%for post in posts %}
             <div class="cardView">
                 <header>
                     <div class="userNickName"><a href="{% url 'profile' post.writer.id%}">{{post.writer.username}}</a></div>
@@ -37,7 +38,7 @@
                     </form>
                 </div>
             </div>
+            {% endfor %}
         </section>
     </div>
-</body> 
-</html>
+{% endblock %}
