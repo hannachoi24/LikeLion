@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Daddy를 Dandy하게</title>
+    <link rel="icon" href="../img/logo-new.png">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="home.css" rel="stylesheet">
+    <link href="notice.css" rel="stylesheet">
+
+  </head>
+
+ 
+    <!-- header : nav bar -->
+    <header class="site-header sticky-top py-1" >
+      <nav class="container d-flex flex-column flex-md-row justify-content-between" >
+        <a class="py-2 d-none d-md-inline-block main-logo-div" href="#">
+          <img src="../img/logo-new.png" id="main_logo" alt="메인로고" height="30" style="margin-top:-8px; margin-bottom:-10px;">
+        </a>
+          <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0 nav-div">
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 30px;">Brand Story</a>
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Style Check</a>    
+          </div>
+          <div id="search-div">
+          <form id="search-form">
+            <input type="search-input" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+          </div>
+          <a class="py-2 d-none d-md-inline-block nav-link nav-menu" style="margin-left:0px; " href="#">Join/Login</a>
+          <a class="py-2 d-none d-md-inline-block" href="../home/mypage.html">
+            <img src="../img/011-user.png" alt="마이페이지" width="30" height="30"></a>
+          
+      </nav>
+    </header>
+
+    <body>
+        <div id="app-body">
+            <div class="escrow-history">
+                <div class="container setting-header">
+                    <section data-name="page-header" class="row align-items-center">
+                        <div class="col-12">
+                            <h1>공지사항</h1>
+                        </div>
+                    </section>
+                </div>
+                <div class="container setting-body">
+                    <!-- <section data-name="page-info" class="row align-items-center justify-content-between">
+                        <div class="col-6">
+                            <h1>안전거래 내역</h1>
+                        </div>
+                    </section> -->
+                    <div class="row escrow-list-empty justify-content-center">
+                        <div class="escrow-list-empty-text">
+                          <img src="../Loading/img/spinner.gif" width="90px" height="90px"><br><br><br>
+                          <a>공지사항 준비중 입니다.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
