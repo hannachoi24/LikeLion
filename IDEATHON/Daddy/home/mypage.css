@@ -22,6 +22,40 @@ div {
   display: block;
 }
 
+.mypage-container .mypage-title {
+  font-size: 2.125rem;
+  padding: 3.125rem 0;
+  font-weight: 500;
+  line-height: 1.41;
+  letter-spacing: -0.0462rem;
+  color: #323232;
+  margin: 0;
+}
+
+h1 {
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.container-md,
+.container.container-md {
+  max-width: 630px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.mypage-container .main-menu {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #323232;
+}
+
 .main-menu {
   margin-top: 100px;
 }
@@ -69,32 +103,24 @@ div {
   border-color: #f2f2f2;
 }
 
-.mypage-title {
-  margin-bottom: 50px;
-}
-
-/* .user-profile-picture {
+.user-profile-picture {
   position: relative;
   height: 100% !important;
 }
 
 .user-profile-picture div[data-name="image"].is-square {
-  border-radius: 0.75rem;
-  padding: 0;
   height: 100%;
+  width: 100%;
 }
 
 .user-profile-picture {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  border: 0.0625rem solid #f2f2f2;
   overflow: hidden;
   background-size: cover;
   background-position: 50% 50%;
-  background-color: #e1e1e1;
-} */
+}
 
 .mypage-container .user-info {
   /* flex: auto; */
@@ -150,8 +176,4 @@ img {
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
-}
-
-.mypage-title {
-  margin-top: 40px;
 }
