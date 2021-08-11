@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style</title>
+	<meta charset="utf-8">
+	<!-- 모바일 화면을 위한 메타데이터 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+	    html {
+             overflow-y: scroll;
+        }
+		
+		body {
+			color: black;
+			width: 100%;
+			height: 100%;
+
+		}
+		p.logo {
+			background: transparent;
+			/* color: red;  */
+			text-align: left;
+			font-size: 40px;
+			margin-top: 0px;
+			margin-left: 10px;
+		}
+		div.profile-aria{
+			/*레이아웃 설정*/
+			position:absolute;
+			margin-top: 50px;
+			top:80%;
+			left:50%;
+			transform:translate(-50%, -50%)
+		}
+		p.tv {
+			font-weight: 900;
+			position:absolute;
+			margin-top: 100px;
+			left:40%;
+			text-align: center;
+			font-size: 30px;
+		}
+		p.tv2 {
+			margin-top: 170px;
+			left:20%;
+			position:absolute;
+			text-align: center;
+			font-size: 15px;
+			opacity: 0.3;
+            
+		}
+		li {
+			/*list 가로 배열*/
+			float: left; 
+			/* 문장 앞에 있는 마커 설정을 없앰 */
+			list-style: none; 
+			margin: 10px; 
+			/* 줄바꿈 설정 */
+			display: block;
+		}
+		div.profile {
+            /* background-image: url(""); */
+			width: 150px; 
+			height: 200px; 
+			background: transparent;
+		}
+		div.profile-card{
+			width: 150px; 
+			height: 200px;
+			
+		}
+		/* .Btn{
+			border: 0;
+  			outline: 0;
+  			background: none;
+  			cursor: pointer;
+		} */
+
+		.btm_image{
+			background-image: transparent;
+		}
+		p.profile-card {
+			color: black; 
+			text-align: center;
+		}
+
+		.ccheck {
+			position: absolute;
+			z-index: 1;
+			width: 100px;
+			height: 100px;
+		}
+	
+		.ccheck input[type="checkbox"] {
+
+			display:none;
+		}
+
+		.ccheck label{
+			width:100%;
+			height:20px;
+		}
+
+		.ccheck input[type="checkbox"] + label .chk_img {
+			
+			padding:0 0 0 30px;
+			height: 100%;
+			background:url("./img/1.png")no-repeat;
+			cursor:pointer;
+		}
+
+		.ccheck input[type="checkbox"]:checked + label .chk_img {
+			background:url("./img/2.png")no-repeat;
+		}
+
+	
+		ul{
+		list-style:none;
+		left:0px;
+		}
+
+</style>
+
+</head>
+<body bgcolor="white">
+	<div>
+		<!-- 로고 -->
+		<div>
+			<p class="logo"><img class="navlogo" src="../Question/logo/logo.png" width="150" heigth="20" alt="로고"/></p>
+		</div>
+		<div class="profile-aria">
+			<!-- 텍스트 -->
+			<div>
+				<p class="tv">스타일 선택</p>
+			</div>
+			<div>
+				<p class="tv2">좋아하는 스타일을 3개 이상 선택하시면 스타일에 맞는 스타일리스트를 추천드려요.</p>
+			</div>
+			<!-- 코디 리스트 -->
+			<div>
+				<ul>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test1">
+                            <label for="check_test1">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택1.png" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test2">
+                            <label for="check_test2">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택2.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test3">
+                            <label for="check_test3">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택3.png" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test4">
+                            <label for="check_test4">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택4.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test5">
+                            <label for="check_test5">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택5.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test6">
+                            <label for="check_test6">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택6.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test7">
+                            <label for="check_test7">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택7.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test8">
+                            <label for="check_test8">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택8.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test9">
+                            <label for="check_test9">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택9.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test10">
+                            <label for="check_test10">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택10.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test11">
+                            <label for="check_test11">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택11.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test12">
+                            <label for="check_test12">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택12.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test13">
+                            <label for="check_test13">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택13.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test14">
+                            <label for="check_test14">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택14.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test15">
+                            <label for="check_test15">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택15.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test16">
+                            <label for="check_test16">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택16.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test17">
+                            <label for="check_test17">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택17.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test18">
+                            <label for="check_test18">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택18.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test19">
+                            <label for="check_test19">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택19.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test20">
+                            <label for="check_test20">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택20.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test21">
+                            <label for="check_test21">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택21.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test22">
+                            <label for="check_test22">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택22.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test23">
+                            <label for="check_test23">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택23.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="profile">
+					  <div class="check">	
+                        <div class="profile-card"></div>
+						<div class="ccheck">
+                            <input type="checkbox" id="check_test24">
+                            <label for="check_test24">
+                                <div class="chk_img"></div>
+                            </label>
+                        </div>
+                        <div class="imgbox">
+                            <img src="../Select/img/택24.jpg" width="150" height="200" alt ="프로필 이미지"/>
+                        </div>
+					  </div>
+					</div>
+				</li>
+			</ul>
+			</div>
+			<!-- 프로필 관리 버튼 -->
+			<!-- <div class="button">
+				프로필 관리
+			</div> -->
+		</div>
+	</div>
+
+	
+</body>
+</html>

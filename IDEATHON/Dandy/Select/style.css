@@ -1,0 +1,41 @@
+
+.styleBtn{ 
+    display:inline-block;
+    width:250px;
+    height:60px;
+    line-height: 60px;
+    border:none;
+    background-color: rgb(0,255,255);
+    color:black;
+    font-size:18px;
+    text-align:center;
+    text-decoration: none;
+    cursor:pointer;
+    overflow:hidden;
+    margin:15px auto;
+    border-radius: 80px 80px 80px 80px;
+  
+    transition:all 0.9s, color 0.3s;
+    font-family:'Noto Sans KR',sans-serif;
+  }
+
+  #button-div{
+     text-align: center;
+     position:absolute;
+     left:50%;
+     transform: translateX(-50%);
+     margin-bottom:300px;
+  }
+
+  .styleBtn:active{
+   box-shadow: 1px 1px 0 rgb(0,0,0,0.5);
+   position:relative;
+   top:2px;
+  } 
+  
+  .styleBtn:hover{
+     color:black;
+  }
+
+  
+  

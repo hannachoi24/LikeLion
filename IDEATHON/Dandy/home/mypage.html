@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Daddy를 Dandy하게</title>
+    <link rel="icon" href="../img/logo-new.png">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="home.css" rel="stylesheet">
+    <link href="mypage.css" rel="stylesheet">
+
+  </head>
+
+ 
+    <!-- header : nav bar -->
+    <header class="site-header sticky-top py-1" >
+      <nav class="container d-flex flex-column flex-md-row justify-content-between" >
+        <a class="py-2 d-none d-md-inline-block main-logo-div" href="#">
+          <img src="../img/logo-new.png" id="main_logo" alt="메인로고" height="30" style="margin-top:-8px; margin-bottom:-10px;">
+        </a>
+          <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0 nav-div">
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 30px;">Brand Story</a>
+            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Style Check</a>    
+          </div>
+          <div id="search-div">
+          <form id="search-form">
+            <input type="search-input" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+          </div>
+          <a class="py-2 d-none d-md-inline-block nav-link nav-menu" style="margin-left:0px; " href="#">Join/Login</a>
+          <a class="py-2 d-none d-md-inline-block" href="../home/mypage.html">
+            <img src="../img/011-user.png" alt="마이페이지" width="30" height="30"></a>
+          
+      </nav>
+    </header>  
+    
+    <body>
+      <div id="body">
+          <div class = "container-md container">
+              <div class = "mypage-container">
+                  <h1 class="mypage-title">마이페이지</h1>
+                  <div class="profile-container underline">
+                      <a href="/home/account.html" class>
+                          <div class="thumb">
+                              <div class="user-profile-picture">
+                                <div data-name="image" class="is-square" style="background-image: url(/img/011-user.png);"></div>
+                              </div>
+                          </div>
+                          <div class="user-info">
+                              <img src="../img/011-user.png" width="30px" height="30px">
+                              <div class="user-name">
+                                  <span class="name-length">최한나</span>
+                                  " 고객님"
+                              </div>
+                              <div class="user-id">
+                                  <span class="id-length">hnc24@naver.com</span>
+                                  <span class="right-arrow">
+                                    <img src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                                  </span>
+                             </div>
+                          </div>
+                      </a>
+                  </div>
+                  <ul>
+                      <span class="main-menu">매칭화면</span>
+                      <li class="sub-menu-container underline">
+                          <a href="#" class="sub-menu-list">
+                                    <img src="../img/matching.png" width="40px" height="50px">
+                                    <span class="sub-menu">Stylist 매칭화면</span>
+                                    <span class="right-arrow">
+                                        <img src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                                    </span>
+                              
+                              <!-- <div class="sub-content">
+                                  
+                              </div> -->
+                              <!-- <div class="arrow">
+                                  
+                              </div> -->
+                          </a>
+                      </li>
+                  </ul>
+                  <ul>
+                      <span class="main-menu">설정</span>
+                      <!-- <li class="sub-menu-container underline">
+                          <a href="#" class="sub-menu-list">
+                              <div class="icon-container">
+                                <img src="https://assets.cdn.soomgo.com/icons/icon-mypage-alarm.svg">
+                                <span class="sub-menu"></span>
+                                <span class="rigth-arrow">
+                                    <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                                </span>
+                              </div>
+                              <div class="sub-content">
+                                  
+                              </div>
+                              <div class="arrow">
+                                 
+                              </div> -->
+                          </a>
+                      </li>
+                      <li class="sub-menu-container underline">
+                          <a href="notice.html" class="sub-menu-list">
+                              <div class="icon-container">
+                                <img src="https://assets.cdn.soomgo.com/icons/icon-mypage-soomgo-info.svg">
+                                <span class="sub-menu">공지사항</span>
+                                <span class="right-arrow">
+                                    <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                                </span>
+                              </div>
+                              <!-- <div class="sub-content">
+                                  
+                              </div> -->
+                              <!-- <div class="arrow">
+                                  
+                              </div> -->
+                          </a>
+                      </li>
+                      <li class="sub-menu-container underline">
+                          <a href="#" class="sub-menu-list">
+                              
+                                <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-soomgo-notice.svg">
+                                <span class="sub-menu">User 가이드</span>
+                                <span class="right-arrow">
+                                    <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                                </span>    
+                          </a>
+                      </li>
+                      <li class="sub-menu-container underline">
+                        <a href="#" class="sub-menu-list">
+                            
+                              <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-soomgo-notice.svg">
+                              <span class="sub-menu">Stylist 가이드</span>
+                              <span class="right-arrow">
+                                  <img data-v-2a482a90="" src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
+                              </span>   
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </body>
+</html>
+    

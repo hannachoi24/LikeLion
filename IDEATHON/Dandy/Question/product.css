@@ -1,0 +1,42 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+  background-color: white;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 0.3px solid rgba(179, 169, 169, 0.753);
+}
+.site-header a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-position: under;
+}
+
+.nav-menu {
+  margin-left: 30px;
+}
+
+#search-div {
+  display: table;
+}
+
+#search-form {
+  display: table-cell;
+  vertical-align: middle;
+}
