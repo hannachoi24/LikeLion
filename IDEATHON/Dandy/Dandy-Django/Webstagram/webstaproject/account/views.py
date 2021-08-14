@@ -88,7 +88,7 @@ def signUp(request):
 
 def logout_user(request):
     logout(request)
-    return redirect('login')
+    return redirect('home')
 
 
 def find_email(request):
@@ -168,6 +168,6 @@ def changePwd(request,usermsg):
     user.save()
     return redirect('login')
   else:
-      return render(request,'changePwd.html')
+      return render(request,'changePwd.html',{'message':' ','usermsg':usermsg})
 
 

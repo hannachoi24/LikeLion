@@ -38,30 +38,33 @@
     <!-- Custom styles for this template -->
     <link href="../static/css/home.css" rel="stylesheet">
     <link href="{% static 'css/account.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'css/nav.css' %}" rel="stylesheet" type="text/css"/>
   </head>
   <body>
  
     <!-- header : nav bar -->
-    <header class="site-header sticky-top py-1" >
-      <nav class="container d-flex flex-column flex-md-row justify-content-between" >
-        <a class="py-2 d-none d-md-inline-block main-logo-div" href="#">
-          <img src="{% static 'img/logo-new.png' %}" id="main_logo" alt="메인로고" height="30" style="margin-top:-8px; margin-bottom:-10px;">
+    <!-- header : nav bar -->
+    <nav class="navbar">
+        <div class="navbar_logo">
+          <a href="{% url 'home' %}">
+          <img src="{% static 'img/logo-new.png' %}" height=40px width="90px">
         </a>
-          <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0 nav-div">
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#" style="margin-left: 30px;">Brand Story</a>
-            <a class="px-2 d-none d-md-inline-block nav-link nav-menu" href="#">Style Check</a>    
-          </div>
-          <div id="search-div">
-          <form id="search-form">
-            <input type="search-input" class="form-control" placeholder="Search..." aria-label="Search">
-          </form>
-          </div>
-          <a class="py-2 d-none d-md-inline-block nav-link nav-menu" style="margin-left:0px; " href="{% url 'login' %}">Join/Login</a>
-          <a class="py-2 d-none d-md-inline-block" href="{% url 'mypage' %}">
-            <img src="{% static 'img/011-user.png' %}" alt="마이페이지" width="30" height="30"></a>
-          
-      </nav>
-    </header> 
+        </div>
+  
+        <ul class="navbar_menu">
+          <li class="nav_li"><a href="{% url 'home' %}">회사 소개</a></li>
+          <li class="nav_li"><a href="{% url 'userGuide' %}">이용 가이드</a></li>
+          <li class="nav_li"><a href="{% url 'stylistGuide' %}">스타일리스트</a></li>
+          <li class="nav_li"><a href="">자주 묻는 질문</a></li>
+        </ul>
+  
+        <ul class="navbar_user">
+          <li class="nav_li"><a href="{% url 'signUp' %}">회원가입</a></li>
+        <li class="nav_li"><a href="{% url 'login' %}">로그인</a></li>
+        <li class="nav_li"><a href="{% url 'logout' %}">로그아웃</a></li>
+        <li class="nav_li"><a href="{% url 'mypage' %}"><img src="{% static 'img/011-user.png' %}" style="width:30px; height:30px; margin-top:-5px;"></a></li>
+        </ul>
+    </nav>
     
     <body>
       {% if user.is_authenticated %}
@@ -93,10 +96,10 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="/mypage/account-info/settings/password" class="item-container">
+                            <a href="{% url 'changePwd_account' user_profile.user.email %}" class="item-container">
                                 <div class="item">
                                     <div class="item-title">비밀번호</div>
-                                    <div class="item-info">{{user_profile.user.password}}</div>
+                                    <div class="item-info">암호화 되어있습니다. 비밀번호를 바꾸려면 누르세요.</div>
                                 </div>
                                 <div>
                                     <img src="https://assets.cdn.soomgo.com/icons/icon-mypage-list-arrow.svg">
