@@ -1,0 +1,353 @@
+.contents_wrap {
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+li,
+p,
+dt,
+dd,
+div,
+span,
+td,
+th {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Noto Sans KR", "Dotum", "돋움", "AppleGothic", "애플고딕",
+    verdana, sans-serif;
+  font-weight: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+  -webkit-text-size-adjust: none;
+}
+
+.travel_event_list {
+  padding: 100px 0 30px;
+}
+
+.title_sub2 {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 26px;
+  color: #202020;
+  padding-left: 3px;
+}
+
+.mb20 {
+  margin-bottom: 20px !important;
+  margin-left: 20px;
+}
+
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.tab_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.tab_wrap.tab_style01.col6 li {
+  width: 20%;
+}
+
+.tab_wrap li {
+  float: left;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.tab_wrap.tab_style01 li a:hover,
+.tab_wrap.tab_style01 li.active a {
+  color: #e53448;
+  border-bottom: 2px solid #e53448;
+}
+
+.tab_wrap.tab_style01.col6 li a {
+  font-size: 16px;
+}
+
+.tab_wrap.tab_style01 li a {
+  display: block;
+  line-height: 56px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+}
+
+.tab_wrap li a {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: #909090;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #666;
+}
+
+a {
+  cursor: pointer;
+}
+
+.mb80 {
+  margin-bottom: 80px !important;
+}
+
+.travel_list.col3 {
+  margin-left: -20px;
+}
+
+.travel_list {
+  overflow: hidden;
+}
+.clear {
+  position: relative;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.travel_list.col3 li {
+  width: 33.33%;
+  padding-left: 20px;
+}
+
+.travel_list > li {
+  float: left;
+}
+
+.travel_list li a {
+  display: block;
+  padding-left: 2px;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+dl.travel_info dt {
+  margin-bottom: 20px;
+}
+
+dt {
+  display: block;
+}
+
+dl.travel_info dt img {
+  width: 100%;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+
+.travel_list.col3 li dl.travel_info dd {
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+dl.travel_info dd.txt {
+  margin-bottom: 10px;
+  color: #232323;
+  margin-left: -10px;
+}
+
+dl.travel_info dd,
+dl.travel_info dd p {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+}
+
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+
+dl.travel_info dd.txt p:first-child {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+dl.travel_info dd.txt p {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+dl.travel_info dd,
+dl.travel_info dd p {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+}
+
+p {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.travel_list.col3 li dl.travel_info dd {
+  padding: 0 20px;
+}
+
+dl.travel_info dd.txt {
+  margin-bottom: 10px;
+  color: #232323;
+}
+
+.travel_list.col3 li dl.travel_info dd {
+  padding: 0 20px;
+}
+
+dl.travel_info dd.price {
+  font-size: 16px;
+  color: #242424;
+  line-height: 1;
+}
+
+dl.travel_info dd.price span {
+  color: #f53d3b;
+  font-size: 22px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+}

@@ -1,0 +1,327 @@
+.top_btnarea {
+  width: 100%;
+}
+
+.clear {
+  position: relative;
+}
+
+li,
+p,
+dt,
+dd,
+div,
+span,
+td,
+th {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Noto Sans KR", "Dotum", "돋움", "AppleGothic", "애플고딕",
+    verdana, sans-serif;
+  font-weight: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+body {
+  background-color: #fff;
+  color: #666;
+  -webkit-text-size-adjust: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.top_btnarea .title_sub2 {
+  margin-bottom: 20px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 26px;
+  color: #202020;
+  float: left;
+  margin-left: 80px;
+}
+
+h3 {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.top_btnarea .btn_common {
+  /* float: right; */
+  display: inline-block;
+  position: relative;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  font-size: 14px;
+  color: #909090 !important;
+  border: 1px solid #e0e0e0;
+  padding: 0 26px 0 19px;
+  height: 30px;
+  line-height: 30px;
+  top: -5px;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: #666;
+  text-decoration: none;
+}
+
+a {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.top_btnarea .btn_common:after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 9px;
+  background: url(/pc/front/inc/images/common/btn/btn_arrow.png) no-repeat;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.mb30 {
+  margin-bottom: 30px !important;
+}
+
+.tab_wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.tab_wrap.tab_style01.col3 li {
+  width: 33.3%;
+}
+
+.tab_wrap li {
+  float: left;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.tab_wrap.tab_style01 li a:hover,
+.tab_wrap.tab_style01 li.active a {
+  color: #e53448;
+  border-bottom: 2px solid #e53448;
+}
+
+.tab_wrap.tab_style01 li a {
+  display: block;
+  line-height: 56px;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.tab_wrap li a {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card_partnership_list {
+  clear: both;
+  display: block;
+  width: 90%;
+  border: 1px solid #cbcbcb;
+  margin-left: 80px;
+}
+
+.card_partnership_list .card_list {
+  display: table;
+  width: 100%;
+  padding: 60px 40px;
+  margin-left: 65px;
+}
+
+ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.card_partnership_list .card_list li {
+  display: table-cell;
+  width: 33%;
+  padding: 0 25px;
+}
+
+.card_partnership_list .card_list li a.thumb_card {
+  width: auto;
+  display: block;
+}
+
+.card_partnership_list .card_list li a.thumb_card .cardimg {
+  display: inline-block;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.card_partnership_list .card_list li a.thumb_card .cardimg img {
+  width: 241px;
+  height: 152px;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+  outline: none;
+}
+
+.card_partnership_list .card_list li a dl {
+  display: block;
+  /* vertical-align: top; */
+}
+
+dl {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.card_partnership_list .card_list li a dl dt {
+  display: block;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 20px;
+  color: #202020;
+  margin-bottom: 15px;
+}
+
+.card_partnership_list .card_list li a dl dd {
+  display: block;
+  font-family: "Noto Sans KR";
+  font-weight: 300;
+  font-size: 15px;
+  color: #666;
+  white-space: pre-line;
+  line-height: 20px;
+}

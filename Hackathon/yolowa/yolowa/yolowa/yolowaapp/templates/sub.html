@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .title {
+        text-align: center;
+        font-family: 'Nanum Myeongjo', serif;
+        font-weight: bold;
+    }
+    .s {
+        text-align: center;
+    }
+    .wrap {
+        left: 40%;
+        display: inline-block;
+        position: relative;
+    }
+    .button {
+        width: 140px;
+        height: 45px;
+        font-family: 'Nanum Myeongjo', serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: rgb(160, 150, 150);
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .button:hover {
+        background-color: #adaaa7;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+</style>
+<br><br><br>
+<h4 class="title">{{y_sub.title}}</h4>
+<div class="s">
+    <br>
+    {{y_sub.writer}}
+    {{y_sub.pub_date}}
+    <br>
+        <p>{{y_sub.body}}</p>
+</div>
+<br>
+<div class="wrap">
+    <button class="button">
+        <a href="{% url 'edit' y_sub.id %}">수정하기</a>
+    </button>
+</div>
+<div class="wrap">
+    <button class="button">
+        <a href="{% url 'delete' y_sub.id %}">삭제하기</a>
+    </button>
+</div>
+<br><br><br>
+{% endblock %}

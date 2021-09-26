@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MainPage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <style>
+    #M {
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .Name {
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    #nav {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #header {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    #n1 {
+      display: flex;
+    }
+
+    #n2 {
+      display: flex;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    h1 {
+      font-family: 'Gugi', cursive;
+    }
+
+    .bar {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 0px 18px;
+    }
+
+    #mainDocument {
+      font-family: 'Nanum Myeongjo', serif;
+      text-align: center;
+      background-color: #cad9e2;
+    }
+    #base_M {
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .base_Name {
+      text-align: center;
+      color: black;
+      text-decoration: none;
+    }
+
+    #base_nav {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #base_header {
+      font-family: 'Nanum Myeongjo', serif;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    #base_n1 {
+      display: flex;
+    }
+
+    #base_n2 {
+      display: flex;
+    }
+
+    #base_ii {
+      list-style-type: none;
+    }
+
+    #base_h1 {
+      font-family: 'Gugi', cursive;
+    }
+
+    .base_bar {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 0px 18px;
+    }
+  
+  </style>
+
+</head>
+
+<body>
+  <div id="M">
+    <br><br>
+    <a class="Name" href="{%url 'home'%}">
+      <h1>욜로와</h1>
+    </a>
+  </div>
+
+  {% if not user.is_authenticated %}
+  <div id="base_nav">
+    <ul id="base_n1" class="nav justify-content-end">
+
+      <li id="base_ii"><a class="base_bar" href="{%url 'home'%}">Home</a></li>
+      |
+      <li id="base_ii"><a class="base_bar" href="{% url 'login' %}">로그인</a></li>
+      |
+      <li id="base_ii"><a class="base_bar" href="{% url 'signup' %}">회원가입</a></li>
+    </ul>
+  </div>
+
+  <div id="base_header">
+    <ul id="base_n2" class="nav justify-content-center">
+      <li id="base_ii"><a class="base_bar" href="{%url 'southEastAsia'%}">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'travel'%}">금융</a></li>
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if user.is_authenticated %}
+  <div id="base_nav">
+    <ul id="base_n1" class="nav justify-content-end">
+      <li id="base_ii"><a class="base_bar" href="{% url 'logout' %}">로그아웃</a></li>
+    </ul>
+  </div>
+  <div id="base_header">
+    <ul id="base_n2" class="nav justify-content-center">
+      <li id="base_ii"><a class="base_bar" href="{%url 'southEastAsia'%}">여행</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'health'%}">건강</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'travel'%}">금융</a></li>
+      <li id="base_ii"><a class="base_bar" href="{%url 'list'%}">다이어리</a></li>
+    </ul>
+  </div>
+  {% endif %}
+  <br><br>
+
+  <div id="mainDocument">
+    {%block content%}
+    {%endblock%}
+  </div>
+
+</body>
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>&copy; YOLOWA. &middot;</p>
+</footer>
+
+</html>

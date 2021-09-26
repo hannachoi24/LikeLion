@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <link href="{% static 'css/card.css' %}" rel="stylesheet" type="text/css"/>
+    <script src="./travel.js"> </script>
+  
+  <div class="top_btnarea clear">
+    <h3 class="title_sub2">제휴카드혜택</h3>
+    <!-- <a class="btn_common" href="/app/paybooc/ExtnalContent.do?MENU_EPS_CLSS=0400000017&amp;mFocus=Benefit">더보기</a> -->
+  </div>
+
+<ul class="tab_wrap tab_style01 col3 mb30 card_tab" id="tab_1">
+    <li class="active" rel="benefitCard01"><a href="{% url 'travel' %}" title="">여행</a></li>
+    <li rel="benefitCard02"><a href="{% url 'golf' %}" title="">골프</a></li>
+    <li rel="benefitCard03"><a href="{% url 'culture' %}" title="">공연</a></li>
+</ul>
+
+<div class="tab_contents">
+    <!--// start: card_partnership_list  //-->
+    <div class="card_partnership_list">
+        <!--// start: 문화 카드 리스트 //-->
+        <ul class="card_list" id="benefitCard03" style=>
+          <li>
+              <a class="thumb_card" href="#">
+                  <span class="cardimg"><img alt="하나 내맘대로 카드" src="{% static 'img/partnercard_t09_g08_c05.jpg' %}"></span>
+                  <dl>
+                      <dt>하나 내맘대로 카드</dt>
+                      <dd>하나 내맘대로 카드 회원만의 특별한 문화혜택을 드립니다.</dd>
+                  </dl>
+              </a>
+          </li>
+          <li>
+              <a class="thumb_card" href="#">
+                  <span class="cardimg"><img alt="JB전북은행 시그니처 카드" src="{% static 'img/partnercard_t07_g05_c04.jpg' %}"></span>
+                  <dl>
+                      <dt>JB전북은행 시그니처 카드</dt>
+                      <dd>JB전북은행 Signature 회원을 위한 특별한 서비스를 무료로 제공합니다.</dd>
+                  </dl>
+              </a>
+          </li>
+          <li>
+              <a class="thumb_card" href="#">
+                  <span class="cardimg"><img alt="현대 Family 카드" src="{% static 'img/partnercard_c01.jpg' %}"></span>
+                  <dl>
+                      <dt>현대 Family 카드</dt>
+                      <dd>현대 Family 카드 회원만의 특별한 문화혜택을 드립니다.</dd>
+                  </dl>
+              </a>
+          </li>
+      </ul>
+      <!--// end: 문화 카드 리스트 //-->
+  </div>
+  <!--// start: golf_membership_list //-->
+</div>   
+{% endblock %}
