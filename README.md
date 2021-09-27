@@ -12,7 +12,7 @@
 | `9주차`  | 06/09 |                      인스타그램 클론코딩 구현하기 과제                       |  [Webstagram](https://github.com/hannachoi24/LikeLion.git/tree/master/Webstagram)  | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_Webstagram.md)  |
 | `10주차` | 06/04 |                               중앙 아이디어톤                                |          |
 | `11주차` | 06/21~07/04 |                        중앙 IDEATHON                                  |  [IDEATHON](https://github.com/hannachoi24/LikeLion9th/tree/master/IDEATHON/Dandy)  | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_IDEATHON/Dandy.md)
-| `12주차` | 06/23~08/25 |                        스터디 활동\_Spring                            |  [Study](
-| `13주차` | 07/28~08/13 |                        중앙 Hackathon
-| `14주차` | 09/24~25 |                           연합 Hackathon_어흥올림픽
-| `15주차` | 09/17~|                              2학기 장기프로젝트
+| `12주차` | 06/23~08/25 |                        스터디 활동\_Spring                            |  [Study](https://github.com/hannachoi24/Spring_Study/tree/master/hello-spring) | [👩‍💻](https://github.com/hannachoi24/Spring_Study.git/blob/main/README/README_hello-spring.md)  | 
+| `13주차` | 07/28~08/13 |                        중앙 Hackathon                                |  [Hackathon](https://github.com/hannachoi24/LikeLion9th/tree/master/IDEATHON/Dandy)  | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_IDEATHON/Dandy.md)
+| `14주차` | 09/24~25 |                           연합 Hackathon_어흥올림픽  |  [Hackathon](https://github.com/hannachoi24/LikeLion9th/tree/master/IDEATHON/Dandy)  | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_IDEATHON/Dandy.md)
+| `15주차` | 09/17~|                              2학기 장기프로젝트  |  [Hackathon](https://github.com/hannachoi24/LikeLion9th/tree/master/IDEATHON/Dandy)  | [👩‍💻](https://github.com/hannachoi24/LikeLion.git/blob/main/README/README_IDEATHON/Dandy.md)
